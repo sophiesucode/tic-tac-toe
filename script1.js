@@ -1,19 +1,16 @@
-//const playerX= "X";//may not be necessary
-//const playerO= "O";//may not be necessary
-//let currentPlayer= "X";
+
 
 let player1Turn= true;
-//let winner= null;
+
 let board=[
     
     "","","",
     "","","",
     "","",""]
-const startGameBtn=document.getElementById('gameStart');
+//reset button variable
 let resetGamebtn= document.getElementById('restartGame');
-let playerXScoreCard = document.getElementById('scoreX');
-let playerOScoreCard = document.getElementById('score0');
 
+//storing array in variable
 boardSpaces= Array.from(document.querySelectorAll('.space'));
 
 //just for visual referance
@@ -36,7 +33,6 @@ function wonGame(player){
         
         
 
-        
     }else if(board[3]===player&& board[4]===player&& board[5]===player){
         if(player==="X"){xWon()}else{oWon()};
         return true;
@@ -74,7 +70,7 @@ return true
 return false
 }
 
-console.log(boardSpaces)
+//console.log(boardSpaces) making sure variable is selecting correct elements
 //console.log(winningCombos)
 /// if won gAME ===TRUE END GAME
 function logEvent(e){
@@ -119,14 +115,12 @@ boardSpaces.forEach(space=>{
     })
 })
 
-//check for winner/draw
 
 
 
-let space=document.querySelectorAll('.space') ;
-//variables used for keeping score
-let playerXScore=0;
-let playerOScore=0;
+
+//may use later ..let space=document.querySelectorAll('.space') ;
+
 //functions to display whose turn it is....
 function xTurn(){
     
@@ -162,14 +156,11 @@ function draw(){
 //function to end game and show game over message.
 function endGame(){
     if(document.getElementById('xWon').innerText==="Player X won!" || document.getElementById('xWon').innerText==="Player O won!"  ){
-        // gameOver=document.getElementById('gameBox');//activate
-        //aSelectElement.disabled = aBool;
-        //document.getElementById('gameBox').disabled=true;
-        //boardSpaces.forEach(spaces=>{spaces.classList.remove('space')})
+        
         document.getElementById('gameBox').innerHTML="GAME OVER"//can we change font and center?activate
       
-       //div.classList.remove("foo");
-       //document.getElementById('space').style.textAlign="center"
+       //element.classList.remove("space"); attempt to disable board
+       //document.getElementById('space').style.textAlign="center" attempt to center game over
 
         }}
         //function to reset game
