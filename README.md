@@ -35,7 +35,7 @@ wireframe:
 - If I ran into a problem. I used console.log to test different aspects of my code. I also used to console to see what the problem was.
 - If I got stuck for too long, I created an issue ticket for assistance.
 
-#List unsolved problems which would be fixed in future iterations.
+# unsolved problems to be fixed in future iterations.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 I would like to get the "game over" message to not appear so fast and to be centered in the board in bigger red letters.
 If not with the game over, then I'd like to be able to disable the board instead.
