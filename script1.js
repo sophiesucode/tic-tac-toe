@@ -71,13 +71,15 @@ return false
 }
 
 //console.log(boardSpaces) making sure variable is selecting correct elements
-//console.log(winningCombos)
-/// if won gAME ===TRUE END GAME
+
 function logEvent(e){
     //console.log
     console.log(e.target,e.target.innerText)
 }
-//don't allow spaces with a value to be selected
+
+//don't allow spaces with a value to be selected, 
+//make sure available space is filled with current player letter, if selected.
+
 boardSpaces.forEach(space=>{
     space.addEventListener('click',(e)=>{
         
@@ -93,7 +95,7 @@ boardSpaces.forEach(space=>{
                 player1Turn=!player1Turn
                 oTurn()
             }
-            //wonGame("X")
+            
             
         }else{
            
@@ -105,9 +107,7 @@ boardSpaces.forEach(space=>{
                 player1Turn=!player1Turn
                 xTurn()
             } 
-            //wonGame("O")
-            //player1Turn=!player1Turn
-            //xTurn()
+            
         }
        
         //console.log(board)
@@ -119,7 +119,6 @@ boardSpaces.forEach(space=>{
 
 
 
-//may use later ..let space=document.querySelectorAll('.space') ;
 
 //functions to display whose turn it is....
 function xTurn(){
@@ -157,7 +156,7 @@ function draw(){
 function endGame(){
     if(document.getElementById('xWon').innerText==="Player X won!" || document.getElementById('xWon').innerText==="Player O won!"  ){
         
-        document.getElementById('gameBox').innerHTML="GAME OVER"//can we change font and center?activate
+        ///document.getElementById('gameBox').innerHTML="GAME OVER"//can we change font and center?activate
       
        //element.classList.remove("space"); attempt to disable board
        //document.getElementById('space').style.textAlign="center" attempt to center game over
