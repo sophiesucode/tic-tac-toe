@@ -180,44 +180,6 @@ function endGame(){
       location.reload();
 }
  resetGamebtn.addEventListener('click', resetGame)
-// function endGame(){
-//     boardSpaces.forEach(space=>{
-//         space.removeEventListener('click',(e)=>{
-            
-//             if(board[e.target.id] !==""){
-//                 return
-//             }
-//             if(player1Turn){
-//                 e.target.innerText="X"
-//                 board[e.target.id]="X"
-//                 if(wonGame("X")===true){
-//                     return
-//                 }else{
-//                     player1Turn=!player1Turn
-//                     oTurn()
-//                 }
-//                 //wonGame("X")
-                
-//             }else{
-               
-//                 e.target.innerText="O"
-//                 board[e.target.id]="O"
-//                 if(wonGame("O")===true){
-//                     return
-//                 }else{
-//                     player1Turn=!player1Turn
-//                     xTurn()
-//                 }
-//                 //wonGame("O")
-//                 //player1Turn=!player1Turn
-//                 //xTurn()
-//             }
-           
-//             console.log(board)
-//     //logEvent(e)
-//         })
-//     })
-//}
 
 
 //The game automatically starts with X's turn, which is alerted to user when "start game" button
