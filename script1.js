@@ -67,8 +67,8 @@ return true
         console.log("won")
         if(player==="X"){xWon()}else{oWon()};
         return true
-
-    }else if(board.every(brd=>brd !=="")){//checking for draw
+     //checking for draw
+    }else if(board.every(brd=>brd !=="")){
       draw();
     }
 return false
@@ -159,15 +159,17 @@ function draw(){
     document.body.removeChild(removeTurnMessage);
     
 }
-
+//function to end game and show game over message.
 function endGame(){
     if(document.getElementById('xWon').innerText==="Player X won!" || document.getElementById('xWon').innerText==="Player O won!"  ){
-        let gameOver=document.getElementById('gameBox');
+        // gameOver=document.getElementById('gameBox');//activate
         //aSelectElement.disabled = aBool;
         //document.getElementById('gameBox').disabled=true;
-        //boardSpaces.forEach(spaces=>{spaces.disabled=true;})
-        gameOver.innerHTML="GAME OVER"
-
+        //boardSpaces.forEach(spaces=>{spaces.classList.remove('space')})
+        document.getElementById('gameBox').innerHTML="GAME OVER"//can we change font and center?activate
+      
+       //div.classList.remove("foo");
+       //document.getElementById('space').style.textAlign="center"
 
         }}
         //function to reset game
