@@ -37,13 +37,12 @@ I would like to get the "game over" message to not appear so fast and to be cent
 If not with the game over, then I'd like to disable the board instead.
 
 #Describe how you solved for the winner
-I solved for a winner by using multiple if- else statements for each winning combination on the empty board. If the player ===x or player===o then either an xWon function or oWon function
-is run based on who won.
+I solved for a winner by using multiple if- else statements for each winning combination on the empty board. If the player ===x or player===o then either an xWon function or oWon function is run based on who won.
 
 #Describe how some of your favorite functions work
 My favorite function was the one I used to check for a draw. I initially was going to make an if- statement for each space which would have been time-consuming, but I was
 able to achieve the goal with a simple "every" method on the board. The function checks every "space" in the array to see if it has an empty string. If all spaces are filled 
-amd there is no winner, a draw function is run.
+and there is no winner, a draw function is run.
 
 
 
