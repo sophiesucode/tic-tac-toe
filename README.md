@@ -12,7 +12,7 @@ in order to play again.
 - I used wireframes.cc to create a wire frame of how I wanted the structure of the grid to look. I was going for a 3d boxish look.
 wireframe:
 <img src="./images/wireframe for project.png">
-- javascript for the functionality of the game and DOM manipulation.
+* javascript for the functionality of the game and DOM manipulation.
 - CSS for the styling , and 
 - HTML for the structure of the game.
 
