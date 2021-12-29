@@ -13,22 +13,10 @@ const startGameBtn=document.getElementById('gameStart');
 let resetGamebtn= document.getElementById('restartGame');
 let playerXScoreCard = document.getElementById('scoreX');
 let playerOScoreCard = document.getElementById('score0');
-// let zero=document.getElementById("space0");
-// let one=document.getElementById('space1');
-// let two=document.getElementById('space2');
-// let three=document.getElementById('space3');
-// let four =document.getElementById('space4');
-// let five =document.getElementById('space5');
-// let six=document.getElementById('space6');
-// let seven=document.getElementById('space7');
-// let eight=document.getElementById('space8');
-//suspect there is a more succinct way to do this
-// var space = document.getElementsByClassName('space');
-// for(var i = 0; i < space.length; ++i) {
-//   space[i].addEventListener("click" , function(){space[i].style.background = "green"})
-// }
+
 boardSpaces= Array.from(document.querySelectorAll('.space'));
 
+//just for visual referance
 const winningCombos= [
     [0, 1, 2],
     [3, 4, 5],
@@ -40,15 +28,15 @@ const winningCombos= [
     [0, 4, 8],
     
 ]
+//check if player x or player o has won
 function wonGame(player){
     if(board[0]===player && board[1]===player &&board[2]===player){
         if(player==="X"){xWon()}else{oWon()};
         return true
         
         
-        //do i do another if statement to alert correct winner, for if the player is x/o. ex if( player==="X"){
-            //return xWon() function ,else if(player==="O"){ return oWon() }
-        //
+
+        
     }else if(board[3]===player&& board[4]===player&& board[5]===player){
         if(player==="X"){xWon()}else{oWon()};
         return true;
@@ -80,6 +68,8 @@ return true
         if(player==="X"){xWon()}else{oWon()};
         return true
 
+    }else if(board.every(brd=>brd !=="")){//checking for draw
+      draw();
     }
 return false
 }
@@ -91,7 +81,7 @@ function logEvent(e){
     //console.log
     console.log(e.target,e.target.innerText)
 }
-
+//don't allow spaces with a value to be selected
 boardSpaces.forEach(space=>{
     space.addEventListener('click',(e)=>{
         
@@ -124,11 +114,11 @@ boardSpaces.forEach(space=>{
             //xTurn()
         }
        
-        console.log(board)
+        //console.log(board)
 //logEvent(e)
     })
 })
-//don't allow spaces with a value to be selected
+
 //check for winner/draw
 
 
@@ -151,6 +141,7 @@ function oTurn(){
     let h3=document.getElementById('turn');
     h3.innerText="It's Player O's Turn!"
 }
+//functions to display who won and end game
 function xWon(){
     let xWonMessage=document.getElementById('xWon');
     xWonMessage.innerText="Player X won!";
@@ -164,19 +155,25 @@ function oWon(){
     endGame();                
 }
 function draw(){
+   
     let drawMessage=document.getElementById('xWon');
-    drawMessage.innerText="Draw !"
-    endGame();
+    drawMessage.innerText="It's a Draw !";
+    let removeTurnMessage=document.getElementById('turn');
+    document.body.removeChild(removeTurnMessage);
+    
 }
 
 function endGame(){
     if(document.getElementById('xWon').innerText==="Player X won!" || document.getElementById('xWon').innerText==="Player O won!"  ){
-        let gameOver=document.getElementById('gameBox');
-        
-        gameOver.innerText="GAME OVER";
+        //let gameOver=document.getElementById('gameBox');
+        //aSelectElement.disabled = aBool;
+        //document.getElementById('gameBox').disabled=true;
+        boardSpaces.forEach(spaces=>{spaces.disabled=true;})
         
 
+
         }}
+        //function to reset game
  function resetGame(){
    
   
