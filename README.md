@@ -1,12 +1,14 @@
 #Project Plan – # tic-tac-toe
 
 #Purpose:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is a simple online game of tic-tac-toe that allows two players to play the game using the same computer. The game switches turn between X and O, and allows
 each user to select an empty space with their letter. The game displays a message showing which side won after a player gets three spaces in row , then a "game over" message
 on the board. If neither player gets three spaces, the game ends in a draw, which is displayed in a message. The players are able to reset the game with the "refresh" button,
 in order to play again.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #Technologies used:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 I used wireframes.cc to create a wire frame of how I wanted the structure of the grid to look. I was going for a 3d boxish look.
 This is the wireframe:
 <img src="./images/wireframe for project.png">
