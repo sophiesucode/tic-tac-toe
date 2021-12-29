@@ -48,9 +48,9 @@ My favorite function was the one I used to check for a draw. I initially was goi
 able to achieve the goal with a simple "every" method on the board. The function checks every "space" in the array to see if it has an empty string. If all spaces are filled
 and there is no winner, a draw function is run.
 
-///////
+```
 >else if(board.every(brd=>brd !=="")){
       draw();
     }
 return false
-
+```
