@@ -9,7 +9,7 @@ in order to play again.
 
 #Technologies used:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
--I used wireframes.cc to create a wire frame of how I wanted the structure of the grid to look. I was going for a 3d boxish look.
+- I used wireframes.cc to create a wire frame of how I wanted the structure of the grid to look. I was going for a 3d boxish look.
 wireframe:
 <img src="./images/wireframe for project.png">
 - javascript for the functionality of the game and DOM manipulation.
@@ -28,17 +28,17 @@ wireframe:
 
 #My planning/development process and problem-solving strategy.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
--I began with hand-writing notes about each step of how I'd like the game to be played and how I want the game to look.
--After writing notes, I wrote psuedocode to help organize by steps and figure out how to code the game.
+- I began with hand-writing notes about each step of how I'd like the game to be played and how I want the game to look.
+- After writing notes, I wrote psuedocode to help organize by steps and figure out how to code the game.
 <img src="images\pseudocode.JPG">
 
--If I ran into a problem. I used console.log to test different aspects of my code. I also used to console to see what the problem was.
--If I got stuck for too long, I created an issue ticket for assistance.
+- If I ran into a problem. I used console.log to test different aspects of my code. I also used to console to see what the problem was.
+- If I got stuck for too long, I created an issue ticket for assistance.
 
 #List unsolved problems which would be fixed in future iterations.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 I would like to get the "game over" message to not appear so fast and to be centered in the board in bigger red letters.
-If not with the game over, then I'd like to disable the board instead.
+If not with the game over, then I'd like to be able to disable the board instead.
 
 #Describe how you solved for the winner
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
