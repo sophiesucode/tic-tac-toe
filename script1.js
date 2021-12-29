@@ -122,10 +122,7 @@ boardSpaces.forEach(space=>{
 //check for winner/draw
 
 
-//game messages
-//const winnerMessage=`The winner is ${winner}!`
-//const drawMessage= "It's a draw!"
-//const turnMessage= `It's ${currentPlayer}'s turn!`
+
 let space=document.querySelectorAll('.space') ;
 //variables used for keeping score
 let playerXScore=0;
@@ -165,11 +162,11 @@ function draw(){
 
 function endGame(){
     if(document.getElementById('xWon').innerText==="Player X won!" || document.getElementById('xWon').innerText==="Player O won!"  ){
-        //let gameOver=document.getElementById('gameBox');
+        let gameOver=document.getElementById('gameBox');
         //aSelectElement.disabled = aBool;
         //document.getElementById('gameBox').disabled=true;
-        boardSpaces.forEach(spaces=>{spaces.disabled=true;})
-        
+        //boardSpaces.forEach(spaces=>{spaces.disabled=true;})
+        gameOver.innerHTML="GAME OVER"
 
 
         }}
@@ -182,10 +179,6 @@ function endGame(){
  resetGamebtn.addEventListener('click', resetGame)
 
 
-//The game automatically starts with X's turn, which is alerted to user when "start game" button
-//is clicked"
-//startGameBtn.addEventListener('click',alertStart)
-//when it is Player X's turn , an empty space that is clicked is filled with  neon white x or vector
 
 
 
