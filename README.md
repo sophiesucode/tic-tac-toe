@@ -49,7 +49,7 @@ able to achieve the goal with a simple "every" method on the board. The function
 and there is no winner, a draw function is run.
 
 ```
->else if(board.every(brd=>brd !=="")){
+else if(board.every(brd=>brd !=="")){
       draw();
     }
 return false
