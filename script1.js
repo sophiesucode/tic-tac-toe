@@ -156,7 +156,7 @@ function draw(){
 function endGame(){
     if(document.getElementById('xWon').innerText==="Player X won!" || document.getElementById('xWon').innerText==="Player O won!"  ){
         
-        ///document.getElementById('gameBox').innerHTML="GAME OVER"//can we change font and center?activate
+        //document.getElementById('gameBox').innerHTML="GAME OVER"//can we change font and center?activate
       
        //element.classList.remove("space"); attempt to disable board
        //document.getElementById('space').style.textAlign="center" attempt to center game over
